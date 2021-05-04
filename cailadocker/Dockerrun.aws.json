@@ -1,0 +1,18 @@
+{
+ "AWSEBDockerrunVersion": 2,
+  "containerDefinitions": [
+    {
+      "name": "application",
+      "image": "521224436980.dkr.ecr.us-east-1.amazonaws.com/caila",
+      "essential": true,
+      "memory": 128,
+      "portMappings": [
+        {
+          "hostPort": 80,
+          "containerPort": 8080
+        }
+      ]
+    }
+  ],
+  "Logging": "/var/log/supervisor"
+}
